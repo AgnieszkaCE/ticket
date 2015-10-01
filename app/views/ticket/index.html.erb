@@ -1,0 +1,13 @@
+<h1>Ticket#index</h1>
+<table>
+	<% @ticket.each do |ticket| %>
+    <tr>
+      <td><%= ticket.name %></td>
+      <td><%= ticket.time %></td>
+      <td><%= ticket.city %></td>
+    </tr>
+<% end %>
+</table>
+
+<p> Add</p>
+<%= link_to 'New Ticket', new_ticket_path %>

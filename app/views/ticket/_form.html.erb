@@ -1,0 +1,13 @@
+<%= form_for @ticket, url: {action: "create"} do |f| %>
+
+	<%= f.label :name %>:
+	<%= f.text_field :name %>
+	
+	<%= f.label :time %>:
+	<%= f.time_field :time %>
+	
+	<%= f.label :city %>:
+	<%= f.text_field :city %>
+	
+	<%= f.submit "Save" %>
+<% end %>
